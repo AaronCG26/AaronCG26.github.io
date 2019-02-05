@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+/* Style the header */
+header {
+  background-color: #6a5acd;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #7b6bdf;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #7b6bdf;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #6a5acd;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Porfolio</h2>
+<p><strong>Note:</strong> This is just for demonstration, and this is a work in progress...</p>
+
+<header>
+  <h2>Hi, I'm Aaron.</h2>
+</header>
+
+<section>
+  
+  <nav>
+    
+    <ul>
+      <li><a href="index.html">Index</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Here is my webpage!</h1>
+    <img src="myAvatar.png" alt="Me" class="center" height=100 width=100/>
+    
+    <p>This is currently a work in progress I'm hoping to add more, 
+    however this is what I have for the assignment that was given to me.</p>
+    
+    <p>Hi, I am Aaron Garcia, I am 18 year old and I currently in attendance of 
+    Warren High School. Below is my favorite video that is on 
+    Youtube at the current moment, but I hope you enjoy!</p>
+    
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/3L7VJl76i9U" frameborder="0" 
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe>
+  </article>
+</section>
+
+<footer>
+  <p>Social Media:</p>
+  <img src="twitterlogo2.png" alt="Me" class="center" height=100 width=100/>
+  <img src="fblogo(square).png" alt="Me" class="center" height=100 width=100/>
+  <img src="instagramlogo.png" alt="Me" class="center" height=100 width=100/>
+</footer>
+
+</body>
+</html>
